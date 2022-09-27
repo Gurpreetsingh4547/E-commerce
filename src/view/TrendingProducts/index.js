@@ -1,7 +1,7 @@
 import React from "react";
 
 // Components
-import { Product } from "../../Components/Common/Card/Product";
+import { TreandingProductList } from "../products/treandingProductList";
 
 const TrendingProducts = () => (
   <section className="bg-white py-8">
@@ -46,7 +46,7 @@ const TrendingProducts = () => (
           </div>
         </div>
       </nav>
-      <Product />
+      <TreandingProductList />
     </div>
   </section>
 );

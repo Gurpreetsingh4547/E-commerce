@@ -1,10 +1,10 @@
 import React from "react";
 
 // Packages
-import { string, number } from "prop-types";
+import { string, number, func } from "prop-types";
 
 const SvgLogo = ({
-  className, width, height, id, xmlns, viewBox, path
+  className, width, height, id, xmlns, viewBox, path, onClick
 }) => (
   <svg
     className={className}
@@ -13,6 +13,7 @@ const SvgLogo = ({
     height={height}
     viewBox={viewBox}
     id={id}
+    onClick={onClick}
   >
     <path d={path} />
   </svg>
@@ -29,6 +30,7 @@ SvgLogo.propTypes = {
   xmlns: string,
   viewBox: string,
   path: string,
+  onClick: func
 };
 
 /**
@@ -42,6 +44,7 @@ SvgLogo.defaultProps = {
   xmlns: "",
   viewBox: "",
   path: "",
+  onClick: () => {}
 };
 
 export { SvgLogo };
