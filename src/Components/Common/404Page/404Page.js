@@ -1,8 +1,5 @@
 import React from "react";
 
-// CSS
-import "../../../css/404Page.css";
-
 // services
 import { HistoryBack } from "../../../Services/historyBackFunction";
 
