@@ -16,7 +16,7 @@ const ConfirmationModal = ({
   handleSecondaryBtn,
 }) => (
   <Transition.Root show={isPopup} as={Fragment}>
-    <Dialog as="div" className="relative z-30" onClose={() => {}}>
+    <Dialog as="div" className="relative z-10" onClose={() => {}}>
       <Transition.Child
         as={Fragment}
         enter="ease-out duration-300"
