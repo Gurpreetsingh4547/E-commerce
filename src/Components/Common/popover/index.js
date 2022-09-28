@@ -25,6 +25,7 @@ const CartPopover = ({ anchorEl, handleClose, isOpenPopup }) => (
         vertical: "top",
         horizontal: "right",
       }}
+      style={{zIndex: "0"}}
     >
       <div className="w-full bg-white rounded shadow-2xl">
         <div className="relative bg-gray-200 rounded-t py-4 px-4 xl:px-8">
